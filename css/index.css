@@ -311,3 +311,8 @@ body::before {
     font-size: 28px;
     cursor: pointer;
 }
+@media (max-width: 400px){
+    .main-container { width: 95%; min-height: 500px; }
+    .temp { font-size: 36px; }
+    .forecast-items { min-width: 60px; padding: 8px; }
+}
