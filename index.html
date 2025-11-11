@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <!-- FAVICOn -->
+    <link rel="shortcut icon" href="./imgs/Openweather.svg" type="image/x-icon">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <header class="input-container">
+            <input class="city-input" type="text" placeholder="Search your city">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </header>
+        <section class="weather-info">
+            <div class="location-date-container">
+                <div class="location">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <h4 class="country-text">Cairo</h4>
+                </div>
+                <h5 class="current-date">TUE , 8:39 PM</h5>
+            </div>
+            <div class="weather-summary">
+                <img src="./imgs/weather/clouds.svg" alt="" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp">29 °C</h1>
+                    <h3 class="condition">Cloudy</h3>
+                </div>
+            </div>
+            <div class="weather-conditions">
+                <div class="condition-item">
+                    <span><i class="fa-solid fa-droplet"></i></span>
+                    <div class="condition-info">
+                        <h5>Humidity</h5>
+                        <h5>55%</h5>
+                    </div>
+                </div>
+                <div class="condition-item">
+                    <span><i class="fa-solid fa-wind"></i></span>
+                    <div class="condition-info">
+                        <h5>Wind Speed</h5>
+                        <h5>2 M/S</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-container">
+                <!-- Forecast items JS -->
+            </div>
+            <div class="forecast-modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h3 class="modal-date">5 NOV</h3>
+                    <img src="" alt="" class="modal-icon">
+                    <p class="modal-temp">Temp: 29°C / 18°C</p>
+                    <p class="modal-humidity">Humidity: 55%</p>
+                    <p class="modal-wind">Wind: 2 M/S</p>
+                    <p class="modal-condition">Condition: Clear Sky</p>
+                </div>
+            </div>
+        </section>
+        <section class="search-city">
+            <img class="msg-img" src="./imgs/message/search-city.png" alt="">
+            <div>
+                <h1>Search City</h1>
+                <h4>Find out the weather condition</h4>
+            </div>
+        </section>
+        <section class="not-found" style="display: none;">
+            <img class="msg-img" src="./imgs/message/not-found.png" alt="">
+            <div>
+                <h1>City Not Found</h1>
+                <h4>Check the spelling or try another city</h4>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
